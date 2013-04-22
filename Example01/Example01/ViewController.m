@@ -14,6 +14,8 @@
 
 @implementation ViewController
 
+@synthesize myLabel = _myLabel;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -24,6 +26,11 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(IBAction)click:(id)sender {
+    
+    [self.myLabel setText:@"Good bye, cruel world."];
 }
 
 @end
